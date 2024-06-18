@@ -1,6 +1,6 @@
 /* SERVER ADRESS =>*/
 const address = "d60d-193-170-158-243.ngrok-free.app";
-const Protocol = "ws";
+const Protocol = "wss";
 
 let room_code;
 let username = "Gast";
