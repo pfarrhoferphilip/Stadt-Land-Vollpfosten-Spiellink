@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadt Land Vollpfosten</title>
+    <link rel="stylesheet" href="../style/voting.css">
+    
+    <script src="../Script/Json/categories.js" defer></script>
+
+    <script src="../Script/game.js" defer></script>
+    <script src="../Script/game_b.js" defer></script>
+    
+    <script src="../Script/voting_b.js" defer></script>
+</head>
+
+<body>
+    <h1>Bewertung</h1>
+
+    <table id="rating-box"> 
+    </table>
+    <button onclick="sendVotes()" id="button-submit">Absenden</button>
+
+
+    <div id="counter" style="opacity: 0; z-index: -3;"></div>
+    <div id="random-letter" style="opacity: 0; z-index: -3;"></div>
+    <div id="game-board" style="opacity: 0; z-index: -3;"></div>
+</body>
+
+</html>

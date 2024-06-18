@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadt Land Vollpfosten</title>
+    <script src="../Script/lobby_b.js" defer></script>
+    <link rel="stylesheet" href="./../Style/lobby.css">
+</head>
+
+<body>
+    <div class="headline">
+        <span class="headline-text1">STADT LAND</span>
+        <span class="headline-text2">VOLLPFOSTEN</span>
+    </div>
+
+    <!-- LOBBY CONTENT -->
+    <div class="lobby-grid-container">
+        <!--CHARACTER LIST-->
+        <div class="content-box" id="lobby-players-box">
+            <h2 class="lobby-flex-headline">Spieler</h2>
+            <div id="lobby-players-box-players">
+                <div class="player">
+                    <img class="player-image" src="../images/characters/character-2.jpg" alt="char1">
+                    <p>P2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- START BUTTON-->
+        <div id="start-button-container">
+
+        </div>
+
+        <!--GAMEOPTIONS-->
+        <div class="content-box" id="lobby-gameoptions-box">
+            <h2 class="lobby-flex-headline">Spieloptionen</h2>
+
+            <!-- //TODO url kopieren-->
+            <p id="looby-flex-gameoptions-room-code">Room-code: <span onclick="copyRoomCode()" id="room-code"></span></p>
+            <div id="lobby-gameoptions-grid">
+                <div id="looby-flex-gameoptions-category-box-3">
+                    <div class="card" onclick="setGameoptions('normal')" id="card-normal">
+                        <div class="card-content">
+                            <h2>Normal</h2>
+                            <div class="more-text">
+                                <p>Runden: 3x</p>
+                                <p>Rundenzeit: 2min</p>
+                                <p>Kategorien: 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="setGameoptions('schnell')" id="card-schnell">
+                        <div class="card-content">
+                            <h2>Schnell</h2>
+                            <div class="more-text">
+                                <p>Runden: 1x</p>
+                                <p>Rundenzeit: 1min</p>
+                                <p>Kategorien: 5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" onclick="setGameoptions('senioren')" id="card-senioren">
+                        <div class="card-content">
+                            <h2>Senioren</h2>
+                            <div class="more-text">
+                                <p>Runden: 5x</p>
+                                <p>Rundenzeit: 4min</p>
+                                <p>Kategorien: 6</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div id="looby-flex-gameoptions-category-box-5">
+                    <div class="category" onclick="setCategory('standard')" id="category-standard">
+                        <h2>Standard</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('sport')" id="category-sport">
+                        <h2>Sport</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('rotlicht')" id="category-rotlicht">
+                        <h2>Rotlicht</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('lask')" id="category-lask">
+                        <h2>Lask</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('rennsport')" id="category-rennsport">
+                        <h2>Rennsport</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('haushalt')" id="category-haushalt">
+                        <h2>Haushalt</h2>
+                    </div>
+                    <div class="category" onclick="setCategory('tierliebhaber')" id="category-tierliebhaber">
+                        <h2>Tierliebhaber</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadt Land Vollpfosten</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <script src="../Script/Json/character-images_f.js" defer></script>
+    <script src="../Script/Json/character-names_f.js" defer></script>
+    <script src="../Script/home.js" defer></script>
+</head>
+<script>
+    window.onload = function() {
+        console.log('Window onload function activated');
+        jumpNextField('input1')
+        getRandomName()
+        
+    }
+</script>
+
+<body>
+
+    <div class="headline">
+        <span class="headline-text1">STADT LAND</span>
+        <span class="headline-text2">VOLLPFOSTEN</span>
+    </div>
+
+    <div id="main">
+        <div class="content-box" id="char-select">
+            <div id="char-select-image-box">
+                <img id="char-select-image-image" src="../images/characters/character-1.jpg">
+            </div>
+            <div id="char-left-right-box"> 
+                <div id="char-select-left-box">
+                    <img class="char-select-refresh-image" src="../images/characters/left.png" onclick="changeChar(-1)">
+                </div>
+                <div id="char-select-right-box">
+                    <img class="char-select-refresh-image" src="../images/characters/right.png" onclick="changeChar(1)">
+                </div>
+            </div>
+            
+            <div id="char-select-username-box">
+                <input type="text" name="char-select-username-input" id="char-select-username-input" onchange="console.log('onchange activated');">
+                <div id="char-select-username-dice-box">
+                    <img id="char-select-username-dice-image" src="../images/characters/refresh.png" alt="refresh" onclick="getRandomName()">
+                </div>
+            </div>
+        </div>
+        <div class="content-box" id="room-code-box">
+            <div class="room-code-inputs">
+                <input id="input1" class="room-code-input" type="text" placeholder="X" maxlength="1" oninput="handleInput(this, 'input2')" onkeydown="handleBackspace(this, 'input1')">
+                <input id="input2" class="room-code-input" type="text" placeholder="X" maxlength="1" oninput="handleInput(this, 'input3')" onkeydown="handleBackspace(this, 'input1')">
+                <input id="input3" class="room-code-input" type="text" placeholder="X" maxlength="1" oninput="handleInput(this, 'input4')" onkeydown="handleBackspace(this, 'input2')">
+                <input id="input4" class="room-code-input" type="text" placeholder="X" maxlength="1" oninput="handleInput(this, null)" onkeydown="handleBackspace(this, 'input3')">
+            </div>
+            <div id="buttons-box">
+                <div onclick="joinRoom()" class="button">
+                    <p>Join Room</p>
+                </div>
+                <div onclick="createRoom()" class="button">
+                    <p>Create Room</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

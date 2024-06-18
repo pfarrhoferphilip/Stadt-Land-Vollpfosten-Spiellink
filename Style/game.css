@@ -1,0 +1,130 @@
+/*---General---*/
+body {
+    margin: 1vw;
+    background-image: url(../images/BackgroundImageIndexLight.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    width: 98vw;
+    height: 98vh;
+    overflow: hidden;
+
+}
+
+/*-----letter and counter-----*/
+
+#letter-counter {
+    display: flex;
+}
+
+
+/*---random letter box---*/
+
+#random-letter {
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid black;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*---counter box---*/
+
+#counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10vw;
+    height: 10vh;
+    margin-left: auto;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*---Game Board---*/
+
+.input {
+    border: 2px solid #212121;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input:focus {
+    outline-color: white;
+    background-color: #e8e8e8;
+    color: #212121;
+    box-shadow: 5px 5px #888888;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+#table-style {
+    width: 90vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    border-spacing: 0;
+}
+
+table {
+    width: 40vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    border-spacing: 0;
+}
+
+tr {
+    margin: 0;
+}
+
+th {
+    font-size: 1.5em;
+    border-bottom: solid 1px #000;
+    border-left: 1px solid #000;
+    padding: 1vw;
+    margin: 0;
+}
+
+td {
+    padding: 1vw;
+    border-left: 1px solid #000;
+    margin: 0;
+}
+
+.left {
+    border-left: none;
+}
+
+#button-submit {
+    margin-top: 10vh;
+    margin-left: 46vw;
+    margin-right: auto;
+    background-color: #fff;
+    border: solid #000 0.1vw;
+    padding: 0.5vw;
+    width: 8vw;
+    font-size: 1vw;
+}

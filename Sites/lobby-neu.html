@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadt Land Vollpfosten</title>
+    <script src="../Script/lobby_b-neu.js" defer></script>
+    <link rel="stylesheet" href="./../Style/lobby-neu.css">
+</head>
+
+<body>
+    <div class="headline">
+        <span class="headline-text1">STADT LAND</span>
+        <span class="headline-text2">VOLLPFOSTEN</span>
+    </div>
+
+    <!-- LOBBY CONTENT -->
+    <div class="lobby-grid-container">
+        <!--CHARACTER LIST-->
+        <div class="content-box" id="lobby-players-box">
+            <h2 class="lobby-flex-headline">Spieler</h2>
+            <div id="lobby-players-box-players">
+                <div class="player">
+                    <img class="player-image" src="../images/characters/character-2.jpg" alt="char1">
+                    <p>P2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- START BUTTON-->
+        <div id="start-button-container">
+
+        </div>
+
+        <!--GAMEOPTIONS-->
+        <div class="content-box" id="lobby-gameoptions-box">
+            <h2 class="lobby-flex-headline">Spieloptionen</h2>
+
+            <!-- //TODO url kopieren-->
+            <p id="looby-flex-gameoptions-room-code">Room-code: <span onclick="copyRoomCode()" id="room-code"></span></p>
+            <div id="lobby-gameoptions-grid">
+                <div id="game-speed">
+                    <select id="game-speed-dropdown" onchange="setGameoptions(this.value)">
+                        <option value="normal">Normal</option>
+                        <option value="schnell">Schnell</option>
+                        <option value="senioren">Senioren</option>
+                    </select>
+                    <div class="game-options-info" id="game-speed-info">
+
+                    </div>
+                </div>
+                    
+                <div id="game-category">
+                    <select id="game-category-dropdown" onchange="setCategory(this.value)">
+                        <option value="standard">Standard</option>
+                        <option value="sport">Sport</option>
+                        <option value="rotlicht">Rotlicht</option>
+                        <option value="lask">Lask</option>
+                        <option value="rennsport">Rennsport</option>
+                        <option value="haushalt">Haushalt</option>
+                        <option value="tierliebhaber">Tierliebhaber</option>
+                    </select>
+                    
+                    <div class="game-options-info" id="game-category-info">
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
