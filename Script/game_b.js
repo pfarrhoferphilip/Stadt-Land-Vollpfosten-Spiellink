@@ -1,5 +1,5 @@
 /* SERVER ADRESS =>*/
-const address = "f7a2-193-170-158-243.ngrok-free.app";
+const address = "8fbf-193-170-158-243.ngrok-free.app";
 const Protocol = "wss";
 
 let room_code;
